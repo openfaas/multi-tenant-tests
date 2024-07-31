@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  nats-sidechannel:
+    lang: node20
+    handler: ./nats-sidechannel
+    image: docker.io/alexellis2/nats-sidechannel:0.0.1
+
+  core-services:
+    lang: node20
+    handler: ./core-services
+    image: docker.io/alexellis2/core-services:0.0.1
+

@@ -1,0 +1,4 @@
+template
+build
+.secrets
+*/node_modules/**
